@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <h2>Shivshakti Construction</h2>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<section class="projects-layout">
+
+  <!-- LEFT SIDE -->
+  <div class="left-panel">
+    <input type="text" id="searchInput" placeholder="Search project..." onkeyup="searchProject()">
+
+    <div id="projectDetail">
+      <h2>Our House Plans </h2>
+      <p>Click any project to see details here.</p>
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="right-panel">
+    <h1>My Projects</h1>
+
+    <div class="grid" id="projectGrid">
+
+      <div class="card" onclick="showProject(this)"
+        data-full="This is a luxury 3BHK modern villa designed with open terrace, premium elevation, vastu compliant layout, spacious hall, modular kitchen, and natural ventilation planning for comfortable living.">
+        <img src="images/project1.png">
+        <h3>Modern Villa</h3>
+        <p>Luxury 3BHK modern design.</p>
+      </div>
+
+      <div class="card" onclick="showProject(this)"
+        data-full="A duplex house design features two separate living units within a single building, either side-by-side or stacked one above the other. Each unit typically has its own entrance, kitchen, living area, bedrooms, and bathrooms, offering privacy for both families. The layout is often symmetrical, creating a balanced and modern exterior appearance. Duplex homes are ideal for extended families, rental income, or multi-generational living. They maximize land use efficiently while maintaining the comfort of an independent home. This design combines functionality, affordability, and smart space planning.">
+        <img src="images/project2.png">
+        <h3>Duplex House</h3>
+        <p>Smart duplex planning with parking.</p>
+      </div>
+
+      <div class="card" onclick="showProject(this)"
+      data-full="A contemporary bungalow is a single-story home design that blends modern architecture with simple, functional living. It features clean lines, flat or low-sloped roofs, and large glass windows for natural light. Open floor plans connect the living, dining, and kitchen areas to create a spacious feel. Minimalist interiors, neutral colors, and natural materials like wood and stone are commonly used. Outdoor spaces such as patios or gardens are often integrated seamlessly with indoor areas. This design offers comfort, elegance, and easy accessibility without stairs.">
+        <img src="images/project3.png">
+        <h3>Contemporary Bungalow</h3>
+        <p>Open concept modern house.</p>
+      </div>
+
+      <div class="card" onclick="showProject(this)">
+        <img src="images/project4.png">
+        <h3>Family House</h3>
+        <p>Compact design for family living.</p>
+      </div>
+
+      <div class="card" onclick="showProject(this)">
+        <img src="images/project5.png">
+        <h3>Family House</h3>
+        <p>Compact design for family living.</p>
+      </div>
+
+      <div class="card" onclick="showProject(this)">
+        <img src="images/project6.png">
+        <h3>Family House</h3>
+        <p>Compact design for family living.</p>
+      </div>
+
+      <div class="card" onclick="showProject(this)">
+        <img src="images/project7.png">
+        <h3>Family House</h3>
+        <p>Compact design for family living.</p>
+      </div>
+
+      <div class="card" onclick="showProject(this)">
+        <img src="images/project8.png">
+        <h3>Family House</h3>
+        <p>Compact design for family living.</p>
+      </div>
+
+      <div class="card" onclick="showProject(this)">
+        <img src="images/project9.png">
+        <h3>Family House</h3>
+        <p>Compact design for family living.</p>
+      </div>
+
+      <div class="card" onclick="showProject(this)">
+        <img src="images/project510.png">
+        <h3>Family House</h3>
+        <p>Compact design for family living.</p>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>

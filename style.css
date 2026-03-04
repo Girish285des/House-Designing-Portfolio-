@@ -1,0 +1,452 @@
+body {
+  margin:0;
+
+  background:#0d0d0d;
+  color:white;
+  
+}
+
+header {
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:11px 45px;
+  background:#111;
+  font-size: 40px;
+  
+}
+
+/*home page */
+header h2{
+  font-size: 39px;
+  margin: 0;
+}
+
+.brand {
+  display:flex;
+  align-items:center; /* logo आणि text एकाच row मध्ये */
+  gap:25px; /* logo आणि text मध्ये space */
+  color: #d4af37;
+  font-family: serif;
+}
+
+.brand-text h2 {
+  margin:0;
+  font-size:1.5rem;
+  color:#d4af37; /* gold accent */
+}
+
+.brand-text p {
+  margin:0;
+  font-size:0.9rem;
+  color:#fff; /* optional tagline color */
+}
+
+nav a {
+  margin-left: 47px;
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+/* Hover Text Color */
+nav a:hover {
+  color: #d4af37;
+}
+
+/* Underline Animation */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #d4af37;
+  transition: 0.3s ease;
+}
+
+/* Hover underline grow */
+nav a:hover::after {
+  width: 100%;
+}
+
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+              url('images/hero.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+ 
+}
+
+
+.hero-content {
+  
+  max-width: 500px;
+  padding-top: 190px;
+  
+}
+
+.hero h1 {
+  font-size: 78px;
+  line-height: 1.1;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 4px;
+  
+}
+
+.tagline {
+  margin-top: 20px;
+  font-size: 25px;
+  letter-spacing: 2px;
+  color: #d4af37;
+}
+
+
+
+.logo { width:85px; height: auto;}
+
+
+.right-panel h1{
+  color: #d4af37;
+}
+
+
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+  padding:40px;
+}
+
+.card {
+  background:#1a1a1a;
+  padding:15px;
+  border-radius:8px;
+}
+
+.card img {
+  width:100%;
+  border-radius:8px;
+}
+
+.profile {
+  width:250px;
+  border-radius:10px;
+}
+
+
+
+/*Project page*/
+
+
+
+.projects-layout {
+  display: flex;
+  padding: 40px;
+  gap: 40px;
+}
+
+/* LEFT SIDE */
+.left-panel {
+  width: 35%;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: white;
+}
+
+#projectDetail {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* RIGHT SIDE */
+.right-panel {
+  width: 65%;
+}
+
+.right-panel h1 {
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-height: 500px;
+  overflow-y: auto;   /* scroll */
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+
+
+
+
+/* ULTRA PREMIUM SECTION about page*/
+
+.premium-section {
+  min-height: 79vh;
+  background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+              url('images/bg.jpeg');   /* <-- BG image इथे */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.premium-container {
+  width: 95%;
+  max-width: 1200px;
+  display: flex;
+  gap: 60px;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(12px);
+  padding: 60px;
+  border-radius: 15px;
+  border: 1px solid rgba(212,175,55,0.3);
+}
+
+/* LEFT SIDE NEW STRUCTURE */
+
+.premium-left {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.premium-profile {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #d4af37;
+  box-shadow: 0 0 20px rgba(212,175,55,0.4);
+}
+
+.premium-left h1 {
+  color: #d4af37;
+  font-size: 32px;
+}
+
+.premium-left h2 {
+  margin-top: 10px;
+}
+
+.premium-left p {
+  margin-top: 15px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* About Text Box */
+.about-text {
+  flex: 1;
+}
+
+.about-text h1 {
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.about-text h2 {
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  color: #ddd;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+
+
+/* SOCIAL LINKS */
+
+.premium-social a {
+  display: block;
+  margin-top: 12px;
+  color: #d4af37;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.premium-social a:hover {
+  color: white;
+  transform: translateX(5px);
+}
+
+/* RIGHT SIDE */
+
+.premium-right {
+  width: 45%;
+}
+
+.premium-right h1 {
+  color: #d4af37;
+  font-size: 32px;
+}
+
+.premium-contact-box {
+  margin-top: 25px;
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(212,175,55,0.3);
+}
+
+.premium-contact-box p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+
+
+
+footer{
+  display: none;
+
+}
+
+
+
+/*u-tube,insta.email logo design*/
+
+
+.premium-social a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 15px;
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.premium-social a i {
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(212,175,55,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.premium-social a:hover {
+  color: white;
+  transform: translateX(5px);
+}
+
+.premium-social a:hover i {
+  background: #d4af37;
+  color: black;
+}
+
+.premium-contact-box p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.premium-contact-box i {
+  color: #d4af37;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin: 10px;
+    display: inline-block;
+  }
+
+  .hero {
+    padding-left: 5%;
+    text-align: left;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+
+  .tagline {
+    font-size: 14px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+}
