@@ -20,4 +20,15 @@ function searchProject() {
     let text = card.innerText.toLowerCase();
     card.style.display = text.includes(input) ? "block" : "none";
   });
+
 }
+
+
+
+// Mobile menu toggle
+const mobileMenu = document.getElementById('mobile-menu');
+const nav = document.querySelector('header nav');
+
+mobileMenu.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
