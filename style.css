@@ -214,8 +214,6 @@ nav a:hover::after {
 
 
 
-
-
 /* ULTRA PREMIUM SECTION about page*/
 
 .premium-section {
@@ -296,8 +294,6 @@ nav a:hover::after {
   font-size: 15px;
 }
 
-
-
 /* SOCIAL LINKS */
 
 .premium-social a {
@@ -337,9 +333,6 @@ nav a:hover::after {
   margin-bottom: 15px;
   font-size: 16px;
 }
-
-
-
 
 footer{
   display: none;
@@ -403,50 +396,8 @@ footer{
 
 
 
-/* ===== MOBILE RESPONSIVE ===== */
 
-@media (max-width: 768px) {
 
-  header {
-    flex-direction: column;
-    padding: 15px;
-  }
 
-  nav {
-    margin-top: 10px;
-  }
 
-  nav a {
-    margin: 10px;
-    display: inline-block;
-  }
 
-  .hero {
-    padding-left: 5%;
-    text-align: left;
-  }
-
-  .hero h1 {
-    font-size: 38px;
-    line-height: 1.2;
-  }
-
-  .tagline {
-    font-size: 14px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .about {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .profile {
-    width: 200px;
-    margin-bottom: 20px;
-  }
-
-}
